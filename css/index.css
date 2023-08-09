@@ -1,0 +1,408 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html{scroll-behavior: smooth;} /* 버튼 누르면 부드럽게 이동 */
+
+body{
+  font-family: 'Montserrat' , sans-serif; 
+  color: rgb(53, 24, 5);
+}
+
+/* Header______________________________ */
+
+
+.wrap{
+  width: 1200px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(243, 224, 139);
+}
+nav{
+  width: 1200px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb{display: flex;
+  font-weight: 600;
+}
+.gnb li{margin: 0 15px;}
+.gnb li a{
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.gnb li :hover{color:darkorange;}
+
+
+
+
+
+
+/* Main______________________________ */
+main{
+  width: 100%;
+  height: 900px;
+  background: url(../image/main-img01.jpg) no-repeat center center;
+  background-size: cover;
+
+  
+  
+}
+
+
+
+.caption{
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+/*   justify-content: center;
+  align-items: center; */
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+}
+
+.caption h1{
+font-family: 'Noto Sans', sans-serif;
+color: white;
+font-size: 80px;
+font-weight: 700;
+text-transform: capitalize;
+line-height: 90px;
+margin-top: 200px;
+margin-bottom: 20px;
+
+}
+.caption strong{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+
+
+/* Section______________________________ */
+
+
+section{
+  width: 100%;
+  text-align: center;
+}
+section h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section h3{
+  font-family:'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0 50px 0;
+  color: #777;
+}
+
+
+
+/* about _____________________________________________*/
+
+
+#about{
+  width: 1200px;
+  margin: auto;
+  margin-top: 170px;
+
+}
+
+.items{
+  /*   border: 1px solid #000; */
+  width: 1200px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  }
+
+  .item{
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item span{
+    font-size: 100px;
+    color: rgb(255, 195, 66);
+    
+  }
+
+
+  .captions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    line-height: 24px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .captions h2{
+    font-size: 30px;
+    line-height: 47px;
+  }
+
+
+
+  .item:hover .captions{opacity: 1;}
+
+  .captions p:nth-of-type(1){margin: 20px 0;}
+  .caption p:nth-of-type(2){margin-bottom: 20px;}
+
+  .captions a{
+    background-color: darkorange;
+    padding: 7px;
+    border-radius: 3px;
+  }
+  .captions a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+
+  .view{
+    width: 1200px;
+    margin: auto;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .btn1{
+    border: 1px solid rgb(53, 24, 5);
+    padding: 12px;
+    border-radius: 50px;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(53, 24, 5);
+  }
+
+.btn1:hover{
+  border: 1px solid transparent;
+  background-color: darkorange;
+  color: #fff;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  bottom: 5px;
+}
+
+  /* STORE__________________________________*/
+
+#store{
+  margin: auto;
+  margin-top: 170px;
+  padding: 70px;
+  margin-top: 200px;
+  background-color:rgb(255, 250, 224);
+  }
+
+#store .st{
+  width: 1200px;
+  margin: auto;
+}
+
+#store h2{
+  width: 1200px;
+  margin: auto;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+  .container{
+    width: 1200px;
+    margin: auto;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    position: relative;
+    width: 580px;
+    height: 580px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+  
+  }
+
+  .content h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+  
+  .content{
+    position: absolute;
+    top:100%;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    padding-top:200px;
+    transition: 0.5s;
+  }
+  
+  .card:hover .content{top: 30px;}
+
+  .card p{
+    margin-bottom: 70px;
+  }
+  
+  .card:nth-child(1) .content{background: linear-gradient(to top,darkorange, transparent);}
+  .card:nth-child(2) .content{background: linear-gradient(to top, darkorange, transparent);}
+  
+
+  .content h4 span{
+    display: block;
+    font-size: 22px;
+    color: rgb(109, 55, 19);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+
+  .shopping a{
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 5px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+
+
+  /* ADOPT REVIEW__________________________________*/
+  
+
+  #adoptreview{
+    width: 1200px;
+    margin: auto;
+    margin-top: 170px;
+    
+  }
+
+  .adopt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .review{
+    position: relative;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+
+  .detail{
+    position: absolute;
+    bottom: -176px;
+    left: 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 250px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+
+  .review:hover .detail{bottom: 0;}
+
+  .review img{transition: 0.5s;}
+  .review:hover img{filter: blur(2px);}
+
+
+  /* title */
+.title{
+  border-bottom: 1px solid #ddd;
+  overflow: hidden; /* float문제 해결 */
+}
+.title h5{
+  font-weight: normal;
+  color: #000;
+  float: left;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.title span{
+  float: right;
+  color: darkorange;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 15px;
+
+}
+
+
+
+/* Size */
+strong{
+  display: block;
+  font-weight: normal;
+  margin: 10px 0;
+}
+.inforeview input[name=size]{display: none;}
+.inforeview input[name=size]+span{
+  font-size: 13px;
+  color: #666;
+  padding: 0 2px;
+  transition: 0.5s;
+}
+
